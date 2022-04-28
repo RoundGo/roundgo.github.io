@@ -1,75 +1,68 @@
+
 <!DOCTYPE html>
 <html>
+<head>
+		<meta charset="utf-8">
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--webfonts-->
+		<!--//webfonts-->
+</head>
 <body>
-<h1>Hello World</h1>
-<p>[Plum] 梅花娘
-    每天5点：每日句子 + 倒计时（可自定义倒计时事件）
-    每天21点：每日诗词
-    戳一戳：随机一言
-    @ + 问题：AI聊天（默认实现是青云客API，可自行修改）
-    点歌：点歌+歌名，唱歌+歌名
+	<div class="main">
+		<div class="header" >
+			<h1>登录或创建一个免费帐户！</h1>
+		</div>
+		<p></p>
+			<form>
+				<ul class="left-form">
+					<h2>新账户:</h2>
+					<li>
+						<input type="text"   placeholder="Username" required/>
+						<a href="#" class="icon ticker"> </a>
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input type="text"   placeholder="Email" required/>
+						<a href="#" class="icon ticker"> </a>
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input type="password"   placeholder="password" required/>
+						<a href="#" class="icon into"> </a>
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input type="password"   placeholder="password" required/>
+						<a href="#" class="icon into"> </a>
+						<div class="clear"> </div>
+					</li> 
+					<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Please inform me of upcoming w3layouts, Promotions and news</label>
+					<input type="submit" onClick="myFunction()" value="创建账户">
+						<div class="clear"> </div>
+				</ul>
+				<ul class="right-form">
+					<h3>登录:</h3>
+					<div>
+						<li><input type="text"  placeholder="Username" required/></li>
+						<li> <input type="password"  placeholder="Password" required/></li>
+						<h4>I forgot my Password!</h4>
+							<input type="submit" onClick="myFunction()" value="登录" >
+					</div>
+					<div class="clear"> </div>
+				</ul>
+				<div class="clear"> </div>
+					
+			</form>
+			
+		</div>
+			<!-----start-copyright---->
+   					<div class="copy-right">
+						<p>Template 2014. More Templates <a href="http://h2design.taobao.com/" target="_blank" title="氢设计">氢设计</a> </p> 
+					</div>
+				<!-----//end-copyright---->
 
-    Pixiv插件
-    'rank-' #排行榜 day |week|month|setu
-    'tag-' #搜标签 tag-xxx-页码
-    'psid-' #根据id查看插画
-    'user-' #查看作者作品
-    'ptst-' #以图搜图
-    'ptsf-' #以图搜番
-    'loli' #萝莉插画
-    原神米游社签到插件(私聊)
-    群员指令
-    米哈游签到功能	查看全部指令
-    原神签到	开启原神签到
-    崩坏签到	开启崩坏签到
-    添加米游社账号	已开启原神/崩坏签到后，添加一个新的米游社账号
-    账号列表	账号列表查询已有账号列表
-    删除账号	删除一个账号
-    临时签到	立即进行一次签到
-    开启/关闭消息推送	开启/关闭签到成功消息推送
-    管理员指令
-    全部米哈游账号	查看使用签到功能的全部账号
-    全员补签	立即进行一次全员签到
-    Steam - 游戏查询插件
-    ,steam查询 [游戏名]  	列出当前游戏信息
-    ，steam查询 [游戏名]	列出当前游戏信息
-    Console - 自动定义回复插件
-    开始添加   添加新触发词
-    删除词  删除触发词
-    查询词  查询触发词
-    目前添加：
-    触发词	回复词
-    你被骗了	Never Gonna Give You Up
-    社会主义核心价值观	富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善
-    DrawMeme - 基于Skiko的奇怪的图片生成器
-    #ph+文字/ 文字+文字  Pxxnhub生成器
-    #bw+文字+图片  灰白照生成器
-    #5000兆/#5k兆 + 文字/文字+文字  5000兆生成器
-    #0+图片  0%生成器
-    发送任意两个emoji  emoji合成
-    Steamhelper - Steam跨区比价查询/推送
-    指令	功能
-    /<sh, #sh> <cp, 比价> [AppID, 关键字]	对比某SteamApp各区域的价格
-    /<sh, #sh> <week, 周榜>	获取Steam每周销量榜单
-    /<sh, #sh> <sale, 促销>	获取最近的Steam促销
-    /<sh, #sh> <stat, 状态>	获取最近的Steam状态
-    /<sh, #sh> <epic>	获取最近的Epic周免信息
-        /<sh, #sh> <sr, 搜索> [AppID, 关键字]	搜索一个SteamApp
-        /<sh, #sh> <sub, 订阅> [AppID, 关键字]	订阅一个SteamApp的价格变化（需要sub权限）
-        /<sh, #sh> <unsub, 取消订阅> [AppID, 关键字]	取消订阅一个SteamApp（需要sub权限）
-        /<sh, #sh> <list, 查看订阅>	查看该会话下的所有订阅 （需要sub权限）
-        /<sh, #sh> <unall, 取消全部订阅>	取消该会话下的所有订阅 （需要sub权限）
-        /<sh, #sh> <push, 推送>	定时推送大促、周榜信息 （需要push权限）
-        /<sh, #sh> <pushepic, 推送epic>	定时推送Epic平台周免信息 （需要push权限）
-        /<sh, #sh> <reload, 重载> [AppID, 关键字]	重载Steamhelper（需要reload权限）
-        权限节点
-        权限	功能
-        com.evolvedghost.mirai.steamhelper.steamhelper:command.sh	Steamhelper基础指令，不开启无法使用
-        com.evolvedghost.mirai.steamhelper.steamhelper:sub	Steamhelper订阅权限，可以防止订阅消息过多过吵
-        com.evolvedghost.mirai.steamhelper.steamhelper:push	Steamhelper推送权限，可以防止有人随意开关推送
-        com.evolvedghost.mirai.steamhelper.steamhelper:reload	Steamhelper重载权限，可以让指定用户有权限重载
-        ChatLearning - 文字转换语音
-        @ + 快说 + 文字   文字转换语音
-</p>
+	
 </body>
 </html>
